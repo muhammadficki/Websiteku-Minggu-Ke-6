@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="icon" href="image/favicon-96x96.png" type="image/x-icon">
+
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* Style the header */
+        header {
+          background-color: #666;
+          padding: 5px;
+          text-align: center;
+          font-size: 35px;
+          color: white;
+        }
+        
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+          float: left;
+          width: 30%;
+          height: 700px; /* only for demonstration, should be removed */
+          background: #ccc;
+          padding: 20px;
+        }
+        
+        /* Style the list inside the menu */
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        
+        article {
+          float: left;
+          padding: 100px;
+          width: 70%;
+          background-color: #f1f1f1;
+          height: 700px; /* only for demonstration, should be removed */
+        }
+        
+        /* Clear floats after the columns */
+        section::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Style the footer */
+        footer {
+          background-color: #777;
+          padding: 10px;
+          text-align: center;
+          color: white;
+        }
+        
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+          nav, article {
+            width: 100%;
+            height: auto;
+          }
+        }
+        </style>
+</head>
+<body>
+<!-- Navigation   -->
+    <!-- <nav>
+        <a href="index.html">Home</a>
+        <a href="cv-name.pdf">Download CV</a>
+        <a href="kontak.html">Contact</a>
+        <a href="tentang.html">About me</a>
+    </nav>
+     <hr /> -->
+
+     <header>
+        <h2>Websiteku</h2>
+      </header>
+      
+      <!-- Navigation   -->
+     <section>
+        <nav>
+          <ul>
+            <li><a href="Dashboard.html">Home</a></li>
+            <li><a href="image/CV-A11.2022.14052.pdf">Download CV</a></li>
+            <li><a href="kontak.html">Contact</a></li>
+            <li><a href="tentang.html">About Me</a></li>
+          </ul>
+        </nav>
+
+<!-- Bagian Isi Konten -->
+     <article>
+        <h1>Tentang Saya</h1>
+        <p>
+            Hi, saya adalah web developer.
+            Saat ini sedang belajar HTML.
+        </p>
+        <p>
+            Saya masih baru dalam web development, karena itu
+            saya tidak akan pernah berhenti belajar.
+        </p>
+        <p>
+            Saya ingin menguasai bahasa HTML, CSS, dan Javascript.
+            Simak vidio lengkap tentang saya.
+        </p>
+             <video controls width="500px" height="300px">
+                <source src="video/iklan.mp4" type="video/mp4">
+                <track default src="subtitles.vtt">
+             </video>
+     </article>
+    </section>
+
+<!-- Footer -->
+     <footer style="text-align: center;">
+         <p>Copyright &copy; 2022 Muhammad Ficki Maulandani</p>
+     </footer>
+
+</body>
+</html>

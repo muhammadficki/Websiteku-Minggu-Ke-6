@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Websiteku</title>
+<link rel="icon" href="image/favicon-96x96.png" type="image/x-icon">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 5px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 780px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 100px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 780px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>Websiteku</h2>
+</header>
+
+<!-- Navigation   -->
+<section>
+  <nav>
+    <ul>
+      <li><a href="Dashboard.html">Home</a></li>
+      <li><a href="image/CV-A11.2022.14052.pdf">Download CV</a></li>
+      <li><a href="kontak.html">Contact</a></li>
+      <li><a href="tentang.html">About Me</a></li>
+    </ul>
+  </nav>
+  
+<article>
+    
+    <div style="text-align: center">
+        <img src="image/foto.jpg" width="200px"  height="200px" style="border-radius: 50%;"/>
+        <h1>Biodata Diri</h1> 
+    </div>
+
+    <hr />
+    <div style="text-align: center">
+        <h2>Overview</h2>
+        <p>
+            Hi, saya adalah calon web developer masa depan, saat ini sedang belajar HTML 5.
+        </p>
+    </div>
+
+<!-- Table 1   -->
+    <table align="center" border="1" width="500px" style="border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Skill</th>
+                <th>Pengalaman</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <ul>
+                        <li>HTML 5</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Mampu Menguasai HTML 5</li>
+                        <li>Mampu Menguasai CSS</li>
+                        <li>Mampu Menguasai JavaScript</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br />
+    <br />
+
+<!-- Table 2   -->
+    <table align="center" border="1" width="500px" style="border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Pendidikan</th>
+                <th>Tahun</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <ul>
+                        <li>SDN Mantingan Tengah</li>
+                        <li>Mts. Matholiul Falah</li>
+                        <li>SMK TUNAS HARAPAN</li>
+                        <li>UNIVERSITAS DIAN NUSWANTORO</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>2009 - 2015</li>
+                        <li>2015 - 2018</li>
+                        <li>2018 - 2022</li>
+                        <li>2022 - Sekarang</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</article>
+</section>
+
+<!-- Footer -->
+     <footer style="text-align: center;">
+         <p>Copyright &copy; 2022 Muhammad Ficki Maulandani</p>
+     </footer>
+
+</body>
+</html>
